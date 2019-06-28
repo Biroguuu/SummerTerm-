@@ -1,0 +1,116 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std; 
+
+int main() 
+{
+	int mm,dd,year; 
+	 
+	cout << " Enter Month : "; cin >> mm;
+	cout << " Enter Day: "; cin >> dd; 
+	cout << " Enter Year: "; cin >> year;
+
+	// output 
+
+	switch (mm)
+	{
+		case 1: 
+			if (dd > 31 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "January " << dd << ", " << year << endl; 
+			break;
+
+		case 2: 
+			if (dd >= 1 && dd <= 28 && year % 4 != 0) 
+			cout << "February " << dd << ", " << year << endl;  
+			//leap year
+			else if (dd >= 1 && dd <= 29 && year % 4 == 0)  
+			cout << "invalid date for leap year"; 
+			else 
+			cout << "invalid date!!"; 
+			
+			break;
+		
+		case 3: 
+			if (dd > 31 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "March " << dd << ", " << year << endl; 
+			break;
+
+		case 4: 
+			if (dd > 30 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "April " << dd << ", " << year << endl; 
+			break;
+		
+		case 5: 
+			if (dd > 31 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "May " << dd << ", " << year << endl; 
+			break;
+
+		case 6: 
+			if (dd > 30 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "June " << dd << ", " << year << endl; 
+			break;
+		
+		case 7: 
+			if (dd > 31 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "July " << dd << ", " << year << endl; 
+			break;
+
+		case 8: 
+			if (dd > 30 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "August " << dd << ", " << year << endl; 
+			break;
+		
+		case 9: 
+			if (dd > 31 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "September " << dd << ", " << year << endl; 
+			break;
+
+		case 10: 
+			if (dd > 30 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "October " << dd << ", " << year << endl; 
+			break;
+		
+		case 11: 
+			if (dd > 31 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "November " << dd << ", " << year << endl; 
+			break;
+
+		case 12: 
+			if (dd > 30 || dd <= 0) 
+			cout << "invalid date!!!";  
+			else 
+			cout << "December " << dd << ", " << year << endl; 
+			break;
+		
+		default:
+			cout << "Invalid date";
+	}
+	
+	
+
+	_getch(); 
+	
+	return 0;	
+}
+	
